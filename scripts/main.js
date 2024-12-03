@@ -19,7 +19,6 @@ async function switchImageUrso(){
     const comprimento = listaUrso[Math.floor(Math.random() * listaUrso.length)];
     const largura = listaUrso[Math.floor(Math.random() * listaUrso.length)];
     const link = "https://placebear.com/"+comprimento+"/"+largura+".jpg";
-    console.log(link);
     urso.src = link;
 }
 async function switchImageRaposa(){
@@ -28,11 +27,8 @@ async function switchImageRaposa(){
     raposa.src = data.image;
 }
 async function switchImageCoelho(){
-    const response = await fetch("https://rabbit-api-two.vercel.app/api/random");
-    console.log(response)
-    const data = await response.json();
-    console.log(data);
-    coelho.src = data.url;
+    const num = Math.floor(Math.random() * 21)
+    coelho.src = "../images-bonnie/"+num+".jpg";
 }
 async function switchImageSeguranca(){
     const response = await fetch("https://randomuser.me/api/");
