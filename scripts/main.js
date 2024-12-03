@@ -8,18 +8,19 @@ const botaoUrso = document.getElementById("botaoUrso");
 const botaoCoelho = document.getElementById("botaoCoelho");
 const botaoPato = document.getElementById("botaoPato");
 const botaoRaposa = document.getElementById("botaoRaposa");
+const listaUrso = [200,300,400,500,600,700,800,900,1000];
 
 async function switchImagePato(){
-    const response = await fetch("https://random-d.uk/api/quack");
-    const data = await response.json();
-    console.log(data);
-    imagem.src = data.url;
+    const num = Math.floor(Math.random() * 291)
+    const link = `https://random-d.uk/api/`+num+`.jpg`;
+    pato.src = link;
 }
 async function switchImageUrso(){
-    const response = await fetch(" https://random-d.uk/api/v2/randomimg");
-    const data = await response.json();
-    console.log(data);
-    imagem.src = data.url;
+    const comprimento = listaUrso[Math.floor(Math.random() * listaUrso.length)];
+    const largura = listaUrso[Math.floor(Math.random() * listaUrso.length)];
+    const link = "https://placebear.com/"+comprimento+"/"+largura+".jpg";
+    console.log(link);
+    urso.src = link;
 }
 async function switchImageRaposa(){
     const response = await fetch("https://randomfox.ca/floof/");
@@ -28,6 +29,7 @@ async function switchImageRaposa(){
 }
 async function switchImageCoelho(){
     const response = await fetch("https://rabbit-api-two.vercel.app/api/random");
+    console.log(response)
     const data = await response.json();
     console.log(data);
     coelho.src = data.url;
