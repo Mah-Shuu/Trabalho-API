@@ -5,35 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pato</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="camera">
-        <div class="container">
-            <div class="card" id="seguranca">
-                <img id="seg" src="" alt="">
-                <input type="submit" id="botaoSeg">
+    <main><!-- menu fnaf 1-->
+        
+        <!-- Contador de Dias e Horas -->
+        <section class="status">
+            <div class="time-counter">
+                <h2>2 AM</h2>
+                <h4>1 Hour Left</h4>
             </div>
-            <div class="card" id="bonnie">
-                <img id="coelho" src="" alt="">
-                <input type="submit" id="botaoCoelho">
+            <div class="power">
+                <h4>Power Left: <span id="power-percentage">100%</span></h4>
+                <div class="usage-bar">
+                    <h4>Usage:</h4>
+                    <div class="bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
             </div>
-            <div class="card" id="freddy">
-                <img id="urso" src="" alt="">
-                <input type="submit" id="botaoUrso">
-            </div>
-            <div class="card" id="chica">
-                <img id="pato" src="" alt="">
-                <input type="submit" id="botaoPato">
-            </div>
-            <div class="card" id="foxy">
-                <img id="raposa" src="" alt="">
-                <input type="submit" id="botaoRaposa">
-            </div>
-    
-        </div>
-    </div>
+        </section>
 
-    <button id="botaoCamera">Camera</button>
+        <div id="camera">
+            <div class="container">
+                <div class="card" id="seguranca">
+                    <img id="seg" src="" alt="">
+                    <input type="submit" id="botaoSeg">
+                </div>
+                <div class="card" id="bonnie">
+                    <img id="coelho" src="" alt="">
+                    <input type="submit" id="botaoCoelho">
+                </div>
+                <div class="card" id="freddy">
+                    <img id="urso" src="" alt="">
+                    <input type="submit" id="botaoUrso">
+                </div>
+                <div class="card" id="chica">
+                    <img id="pato" src="" alt="">
+                    <input type="submit" id="botaoPato">
+                </div>
+                <div class="card" id="foxy">
+                    <img id="raposa" src="" alt="">
+                    <input type="submit" id="botaoRaposa">
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- Câmeras -->
+        <section class="camera-controls">
+            <button id="botaoCamera"></button>
+        </section>
+    </main>
+    
+
     <script src="./scripts/images.js"></script>
     <script src="./scripts/camera.js"></script>
 </body>
