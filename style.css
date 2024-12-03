@@ -5,16 +5,23 @@
 
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-image: url(images/gifs-fnaf/ctvd0mmbrti51.png);
+    background-image: url(./images/0995b85d336e40de987853cd1148e936.jpeg);
+}
+
+#camera{
+    margin-top: 350px;
+    visibility:hidden;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card{
@@ -29,4 +36,11 @@ input{
 img{
     width: 200px;
     height: 200px;
+}
+
+button{
+    width: 600px;
+    height: 70px;
+    position: relative;
+    bottom: 0px;
 }
