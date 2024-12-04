@@ -8,12 +8,12 @@
     --secondary-bg: rgba(0, 0, 0, 0.7);
     --primary-color: #fff;
     --accent-color: #444;
-    --hover-color: #666;
+    --hover-color: rgba(155, 155, 155, 0.70);
     --green-bar: rgb(79, 255, 79);
 }
 
 body{
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: 'Minecraftia', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,24 +93,7 @@ main {
     transform: translateX(-50%);
     width: 900px;
     height: 60px;
-    border: 2px solid var(--hover-color);
-    background-color: transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-}
-/* Botão central com estilo */
-.camera-controls button {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 900px;
-    height: 60px;
-    border: 2px solid var(--hover-color);
+    border: 4px solid var(--hover-color);
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -131,8 +114,8 @@ main {
     display: block;
     width: 28px; /* Largura da seta */
     height: 28px; /* Altura da seta */
-    border-right: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
+    border-right: 3px solid var(--hover-color);
+    border-bottom: 3px solid var(--hover-color);
     position: absolute;
     transform: rotate(135deg); /* Rotaciona para 135 graus */
 }
@@ -150,8 +133,13 @@ main {
 }
 
 #camera{
-    margin-top: 350px;
-    visibility:hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 1583px;
+    height: 887px;
+    border-radius: 20px;
+    background-image: url(./images/monitor.png);
 }
 
 .container{
@@ -166,18 +154,22 @@ main {
     flex-direction: column;
 }
 
-input{
+.container input{
     width: 200px;
 }
 
-img{
+.card img{
     width: 200px;
     height: 200px;
 }
 
-button{
-    width: 600px;
-    height: 70px;
-    position: relative;
-    bottom: 0px;
-}
+@keyframes slide-rotate-hor-bottom {
+    0% {
+      -webkit-transform: translateY(0) rotateX(0deg);
+              transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      -webkit-transform: translateY(150px) rotateX(90deg);
+              transform: translateY(150px) rotateX(90deg);
+    }
+  }
