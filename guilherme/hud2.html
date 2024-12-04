@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF 1</title>
+    <link rel="stylesheet" href="stylecopia.css">
+</head>
+<body>
+    <main>
+        <!-- Status -->
+        <section class="status">
+            <div class="time-counter">
+                <h2 id="AM">3 AM</h2>
+                <p id="dias">1 Hour Left</p>
+            </div>
+            <div class="power">
+                <p id="powerLeft">Power Left: <span id="power-percentage">51%</span></p>
+                <div class="usage-bar">
+                    <p>Usage:</p>
+                    <div class="bars">
+                        <div class="bar">
+                            <div class="bar2"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar2"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="bar2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Câmeras -->
+        <div id="camera">
+            <div class="container">
+                <div class="card" id="seguranca">
+                    <img src="seguranca.jpg" alt="Segurança">
+                    <button>Abrir</button>
+                </div>
+                <div class="card" id="bonnie">
+                    <img src="bonnie.jpg" alt="Bonnie">
+                    <button>Abrir</button>
+                </div>
+                <div class="card" id="freddy">
+                    <img src="freddy.jpg" alt="Freddy">
+                    <button>Abrir</button>
+                </div>
+                <div class="card" id="chica">
+                    <img src="chica.jpg" alt="Chica">
+                    <button>Abrir</button>
+                </div>
+                <div class="card" id="foxy">
+                    <img src="foxy.jpg" alt="Foxy">
+                    <button>Abrir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botão de Controle -->
+        <section class="camera-controls">
+            <button id="botaoCamera">Abrir Câmera</button>
+        </section>
+    </main>
+
+    <script src="./scripts/images.js"></script>
+    <script src="./scripts/camera.js"></script>
+</body>
+</html>
