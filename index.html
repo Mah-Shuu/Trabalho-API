@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FNAF RTX ON</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
-</head>
-<body>
-    <main><!-- menu fnaf 1-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FNAF RTX ON</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+    </head>
+    <body>
         
-        <!-- Contador de Dias e Horas -->
-        <section class="status">
-            <div class="time-counter">
-                <h2>2 AM</h2>
-                <h4>Night 1</h4>
-            </div>
-            <div class="power">
-                <p id="powerLeft">Power Left: <span id="power-percentage">51%</span></p>
-                <div class="usage-bar">
-                    <p>Usage:</p>
-                    <div class="bars">
-                        <div class="bar">
-                            <div class="bar2"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar2"></div>
-                        </div>
-                        <div class="bar">
-                            <div class="bar2"></div>
+        
+        <main><!-- menu fnaf 1-->
+            
+            <!-- Contador de Dias e Horas -->
+            <section class="status">
+                <div class="time-counter">
+                    <h2>2 AM</h2>
+                    <h4>Night 1</h4>
+                </div>
+                <div class="power">
+                    <p id="powerLeft">Power Left: <span id="power-percentage">51%</span></p>
+                    <div class="usage-bar">
+                        <p>Usage:</p>
+                        <div class="bars">
+                            <div class="bar">
+                                <div class="bar2"></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar2"></div>
+                            </div>
+                            <div class="bar">
+                                <div class="bar2"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <div id="camera">
-            <div class="container">
-                <div class="card" id="seguranca">
-                    <img id="seg" src="" alt="">
-                    <input type="submit" id="botaoSeg">
+            </section>
+            
+            <div id="camera">
+                <div id="miniMapa">
+                    <div>
+                        <img src="" alt="">
+                        <h5>
+                            palco
+                        </h5>
+                    </div>
                 </div>
-                <div class="card" id="bonnie">
-                    <img id="coelho" src="" alt="">
-                    <input type="submit" id="botaoCoelho">
+                <div class="container">
+                    <div class="card" id="seguranca">
+                        <img id="seg" src="" alt="">
+                        <input type="submit" id="botaoSeg">
+                    </div>
+                        <div class="card" id="bonnie">
+                        <img id="coelho" src="" alt="">
+                        <input type="submit" id="botaoCoelho">
+                    </div>
+                    <div class="card" id="freddy">
+                        <img id="urso" src="" alt="">
+                        <input type="submit" id="botaoUrso">
+                    </div>
+                    <div class="card" id="chica">
+                        <img id="pato" src="" alt="">
+                        <input type="submit" id="botaoPato">
+                    </div>
+                    <div class="card" id="foxy">
+                        <img id="raposa" src="" alt="">
+                        <input type="submit" id="botaoRaposa">
                 </div>
-                <div class="card" id="freddy">
-                    <img id="urso" src="" alt="">
-                    <input type="submit" id="botaoUrso">
-                </div>
-                <div class="card" id="chica">
-                    <img id="pato" src="" alt="">
-                    <input type="submit" id="botaoPato">
-                </div>
-                <div class="card" id="foxy">
-                    <img id="raposa" src="" alt="">
-                    <input type="submit" id="botaoRaposa">
-                </div>
-        
             </div>
         </div>
-
+        
         <!-- Câmeras -->
         <section class="camera-controls">
             <button id="botaoCamera"></button>
@@ -70,5 +79,6 @@
 
     <script src="./scripts/images.js"></script>
     <script src="./scripts/camera.js"></script>
+    <script src="./scripts/chiado.js"></script>
 </body>
 </html>
