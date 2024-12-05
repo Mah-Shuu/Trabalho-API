@@ -9,10 +9,12 @@
     --primary-color: #fff;
     --accent-color: #444;
     --hover-color: rgba(155, 155, 155, 0.70);
-    --green-bar: rgb(79, 255, 79);
+    --green-bar: #2ca02c;
+    --greenluz-bar: #5dff5d;
 }
 
 body{
+    overflow: hidden;
     font-family: 'Minecraftia', sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,10 +23,15 @@ body{
     height: 100vh;
     background-image: url(./images/0995b85d336e40de987853cd1148e936.jpeg);
     text-align: center;
+    color: var(--primary-color);
 }
 
 main {
-    padding: 20px;
+    margin-top: 10px;
+    height: 97vh;
+    width: 99vw;
+    border: 2px solid #fff;
+    box-sizing: border-box;
 }
 
 .status {
@@ -33,28 +40,45 @@ main {
 
 .time-counter {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     background-color: var(--secondary-bg);
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
-    font-size: 1.2em;
-    color: var(--primary-color);
+    /* font-size: 1.2em; */
+    /* color: var(--primary-color); */
     text-align: center;
+}
+
+#powerLeft{
+    margin-left: 9px;
+}
+
+#AM {
+    font-size: 40px;
+    margin-right: 0px;
+}
+
+#power-percentage{
+    font-size: 30px;
+}
+
+#dias{
+    margin-left: -7px;
 }
 
 .power {
     position: absolute;
+    width: 155px;
     left: 10px;
-    bottom: 10px;
+    bottom: 25px;
     background-color: var(--secondary-bg);
     padding: 10px;
     border-radius: 5px;
     color: var(--primary-color);
-    font-size: 1em;
 }
 
-.power h4 {
+/* .power h4 {
     margin: 8px;
 }
 
@@ -65,23 +89,32 @@ main {
 .time-counter h2 {
     font-size: 2em;
     margin: 0;
-}
+} */
 
 .usage-bar {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 2px;
 }
 
-.bars {
+.bars{
     display: flex;
-    gap: 5px;
+}
+
+.bar .bar2{
+    background-color: var(--greenluz-bar);
+    width: 13px;
+    height: 30px;
 }
 
 .bar {
+    display: flex;
+    gap: 40px;
     width: 20px;
-    height: 20px;
+    margin: 3px;
+    height: 30px;
     background-color: var(--green-bar);
 }
 
@@ -142,11 +175,11 @@ main {
     background-image: url(./images/monitor.png);
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 15px;
 }
 
 .card{
