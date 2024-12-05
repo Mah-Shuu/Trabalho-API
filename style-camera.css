@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg: #000;
+    --secondary-bg: rgba(0, 0, 0, 0.7);
+    --primary-color: #fff;
+    --accent-color: #444;
+    --hover-color: rgba(155, 155, 155, 0.70);
+    --green-bar: #2ca02c;
+    --greenluz-bar: #5dff5d;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Minecraftia', sans-serif;
+    height: 100vh;
+    background-image: url(./images/0995b85d336e40de987853cd1148e936.jpeg);
+    /* text-align: center; */
+    color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    height: 98vh;
+    width: 99vw;
+    /* border: 2px solid #fff; */
+    box-sizing: border-box;
+}
+
+#camera{
+    position: absolute;
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    width: 1583px;
+    height: 887px;
+    scale: 0.6;
+    border-radius: 20px;
+    background-image: url(./images/monitor.png);
+    transition: 0.5s ease-in-out;
+    
+}
+
+video{
+    position: absolute;
+    opacity: 20%;
+}
+
+.camera.close{
+    bottom: -400px;
+    transform: perspective(30cm) rotateX(60deg) translateZ(-90px);
+}
+
+.camera.open{
+    bottom: 20px;
+    transform: perspective(30cm) rotateX(0) translateZ(480px) ;
+}
+
+.camera-controls button {
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 60px;
+    border: 4px solid var(--hover-color);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+/* Estilo de hover para o botão */
+.camera-controls button:hover {
+    background-color: var(--hover-color);
+}
+/* Setas duplas no botão */
+.camera-controls button::before,
+.camera-controls button::after {
+    content: "";
+    display: block;
+    width: 28px; /* Largura da seta */
+    height: 28px; /* Altura da seta */
+    border-right: 3px solid var(--hover-color);
+    border-bottom: 3px solid var(--hover-color);
+    position: absolute;
+    transform: rotate(135deg); /* Rotaciona para 135 graus */
+}
+
+/* Ajuste da seta superior */
+.camera-controls button::before {
+    top: -5px; /* Ajusta a posição da seta superior */
+    transform: rotate(45deg); /* Aponta para baixo */
+}
+
+/* Ajuste da seta inferior */
+.camera-controls button::after {
+    top: 15px; /* Ajusta a posição da seta inferior */
+    transform: rotate(45deg); /* Aponta para baixo */
+}
