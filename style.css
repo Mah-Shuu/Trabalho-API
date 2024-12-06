@@ -30,8 +30,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    height: 98vh;
-    width: 99vw;
+    height: 97vh;
+    width: 98vw;
     box-sizing: border-box;
 }
 
@@ -40,6 +40,7 @@ main {
     top: 20px;
     right: 20px;
     padding: 15px;
+    padding-right: 30px;
     font-size: 1.2em;
     text-align: right;
 }
@@ -51,9 +52,11 @@ main {
 .power {
     position: absolute;
     text-align: left;
+    font-size: 20px;
     left: 20px;
     bottom: 20px;
-    padding: 15px;
+    padding: 20px;
+    padding-left: 30px;
     border-radius: 5px;
     color: var(--primary-color);
 }
@@ -88,6 +91,19 @@ main {
     background-color: var(--green-bar);
 }
 
+#recording{
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 1000px;
+    animation: bip 2s ;
+    animation-iteration-count: infinite;
+}
+
 /* Botão central com estilo */
 .camera-controls button {
     position: absolute;
@@ -102,36 +118,42 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
 }
 
 /* Estilo de hover para o botão */
 .camera-controls button:hover {
     background-color: var(--hover-color);
 }
+
+.setas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900;
+    height: 100%;
+    transform: scaleX(6);
+}
+
 /* Setas duplas no botão */
-.camera-controls button::before,
-.camera-controls button::after {
-    content: "";
+.seta-topo,
+.seta-baixo {
     display: block;
+    position: absolute;
     width: 28px; /* Largura da seta */
     height: 28px; /* Altura da seta */
     border-right: 3px solid var(--hover-color);
     border-bottom: 3px solid var(--hover-color);
-    position: absolute;
-    transform: rotate(135deg); /* Rotaciona para 135 graus */
+    transform: rotate(45deg); 
 }
 
 /* Ajuste da seta superior */
-.camera-controls button::before {
-    top: -5px; /* Ajusta a posição da seta superior */
-    transform: rotate(45deg); /* Aponta para baixo */
+.seta-topo {
+    top: -5px;
 }
 
 /* Ajuste da seta inferior */
-.camera-controls button::after {
-    top: 15px; /* Ajusta a posição da seta inferior */
-    transform: rotate(45deg); /* Aponta para baixo */
+.seta-baixo {
+    top: 10px;
 }
 
 #camera{
@@ -158,10 +180,17 @@ main {
     transform: perspective(30cm) rotateX(0) translateZ(480px) ;
 }
 
-video{
+#static{
     display: none;
     position: absolute;
     animation: statica 2s both;
+}
+
+#static2{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    opacity: 20%;
 }
 
 .container {
@@ -195,5 +224,20 @@ video{
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes bip{
+    0%{
+        opacity: 0;
+    }
+    49%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
     }
 }
