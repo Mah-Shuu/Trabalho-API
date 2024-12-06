@@ -21,18 +21,17 @@ body{
     font-family: 'Minecraftia', sans-serif;
     height: 100vh;
     background-image: url(./images/0995b85d336e40de987853cd1148e936.jpeg);
-    /* text-align: center; */
     color: var(--primary-color);
 }
 
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 10px;
     height: 98vh;
     width: 99vw;
-    border: 2px solid #fff;
     box-sizing: border-box;
 }
 
@@ -136,17 +135,38 @@ main {
 }
 
 #camera{
-    display: none;
+    position: absolute;
+    display: block;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
     width: 1583px;
     height: 887px;
+    scale: 0.6;
     border-radius: 20px;
     background-image: url(./images/monitor.png);
+    transition: 0.5s ease-in-out;
+}
+
+.camera.close{
+    bottom: -400px;
+    transform: perspective(30cm) rotateX(60deg) translateZ(-90px);
+}
+
+.camera.open{
+    bottom: 20px;
+    transform: perspective(30cm) rotateX(0) translateZ(480px) ;
+}
+
+video{
+    display: none;
+    position: absolute;
+    animation: statica 2s both;
 }
 
 .container {
     display: flex;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -164,4 +184,16 @@ main {
 .card img{
     width: 200px;
     height: 200px;
+}
+
+@keyframes statica{
+    0% {
+        opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

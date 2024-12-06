@@ -1,12 +1,23 @@
 const camera = document.getElementById("camera");
 const botao = document.getElementById("botaoCamera");
+const video = document.getElementById("static");
+const main = document.getElementById("main");
+const mapa = document.getElementById("mapa");
 
-botao.addEventListener("click",function(){
-    if (camera.style.display == "none"){
-        camera.style.display = "flex"
-        camera.style.animation = "slide-rotate-hor-bottom 0.18s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both"
+botao.addEventListener("mouseover",function(){
+    if (camera.className == "camera close"){
+        camera.className = "camera open"
+        setTimeout(() => {video.style.display = "block"},600)
+        setTimeout(() => {camera.style.visibility = "hidden"},1000)
+        setTimeout(() => {mapa.style.visibility = "visible"},1000)
+        setTimeout(() => {main.style.border = "2px solid #fff"},1000)
+        setTimeout(() => {video.style.display = "none"},2500)
     }else{
-        camera.style.animation = "slide-rotate-hor-bottom 0.18s cubic-bezier(0.250, 0.460, 0.450, 0.940) both"
-        camera.style.display = "none"
+        video.style.display = "block"
+        setTimeout(() => {camera.style.visibility = "visible"},1000)
+        setTimeout(() => {mapa.style.visibility = "hidden"},1000)
+        setTimeout(() => {main.style.border = "0"},1000)
+        setTimeout(() => {video.style.display = "none"},2500)
+        setTimeout(() => {camera.className = "camera close"}, 1800)
     }
 });
