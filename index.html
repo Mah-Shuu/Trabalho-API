@@ -16,10 +16,16 @@
     <main id="main"><!-- menu fnaf 1-->
         <section class="mapa" id="map">
             <div class="text">
-                <h2>text</h2>
+                <h2 id="mapText">text</h2>
             </div>
             <div class="mini">
-                <img src="/images/9c2HO3P.png" alt="Fnaf 1 Map Png@seekpng.com">
+                <div class="room">
+                    <button class="cam" id="cam1"><p class="camText">CAM</p><p class="camNum">1</p></button>
+                    <button class="cam" id="cam2"><p class="camText">CAM</p><p class="camNum">2</p></button>
+                    <button class="cam" id="cam3"><p class="camText">CAM</p><p class="camNum">3</p></button>
+                    <button class="cam" id="cam4"><p class="camText">CAM</p><p class="camNum">4</p></button>
+                </div>
+                <!-- <img src="/images/9c2HO3P.png" alt="Fnaf 1 Map Png@seekpng.com"> -->
             </div>
         </section>
         <!-- Contador de Dias e Horas -->
@@ -53,26 +59,22 @@
         <div id="camera" class="camera close">
         
         </div>
-        <div class="container" id="mapa">
+        <div class="container" id="sujeitos">
             <div class="card" id="seguranca">
                 <img id="seg" src="" alt="">
                 <input type="submit" id="botaoSeg">
             </div>
             <div class="card" id="bonnie">
                 <img id="coelho" src="" alt="">
-                <input type="submit" id="botaoCoelho">
             </div>
             <div class="card" id="freddy">
                 <img id="urso" src="" alt="">
-                <input type="submit" id="botaoUrso">
             </div>
             <div class="card" id="chica">
                 <img id="pato" src="" alt="">
-                <input type="submit" id="botaoPato">
             </div>
             <div class="card" id="foxy">
                 <img id="raposa" src="" alt="">
-                <input type="submit" id="botaoRaposa">
             </div>
             
         </div>
@@ -94,6 +96,7 @@
     
 
     <script src="./scripts/images.js"></script>
-    <script src="./scripts/camera.js"></script>
+    <script src="./scripts/abrirCamera.js"></script>
+    <script src="./scripts/funcaoCamera.js"></script>
 </body>
 </html>

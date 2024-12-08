@@ -4,10 +4,6 @@ const raposa = document.getElementById("raposa");
 const coelho = document.getElementById("coelho");
 const seguranca = document.getElementById("seg");
 const botaoSeg = document.getElementById("botaoSeg");
-const botaoUrso = document.getElementById("botaoUrso");
-const botaoCoelho = document.getElementById("botaoCoelho");
-const botaoPato = document.getElementById("botaoPato");
-const botaoRaposa = document.getElementById("botaoRaposa");
 const listaUrso = [200,300,400,500,600,700,800,900,1000];
 
 async function switchImagePato(){
@@ -36,18 +32,12 @@ async function switchImageSeguranca(){
     seguranca.src = data.results[0].picture.large;
 }
 
-botaoRaposa.addEventListener("click", function(){
-    switchImageRaposa();
-})
-botaoCoelho.addEventListener("click", function(){
-    switchImageCoelho();
-})
+switchImageRaposa();
+switchImageCoelho();
+switchImageUrso();
+switchImagePato();
+switchImageSeguranca();
+
 botaoSeg.addEventListener("click", function(){
     switchImageSeguranca();
-})
-botaoUrso.addEventListener("click", function(){
-    switchImageUrso();
-})
-botaoPato.addEventListener("click",function(){
-    switchImagePato();
 })
