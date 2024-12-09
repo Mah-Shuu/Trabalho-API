@@ -46,7 +46,11 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.cam2a{
+    background-image: url(./images/fnaf-background/left0.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -358,7 +362,16 @@ body.restroom #cam4{
     right: 20px;
 }
     
+body.cam2a #cam5{
+    animation: color-bip 2s;
+    animation-iteration-count: infinite;
+}
 
+#cam5{
+    bottom: 20px;
+    right: 20px;
+}
+    
 /* faltar por um input dos map */
 @keyframes statica{
     0% {
