@@ -32,7 +32,7 @@ body {
     background-size: 100% 100%;
 }
 .pirate-cove{
-    background-image: url(./images/fnaf-background/Pirate_cove_nocamera.webp);
+    background-image: url(./images/fnaf-background/zejbvhvahnt61.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -251,7 +251,7 @@ main {
 
 #foxy{
     top: 400px;
-    right: 550px;
+    left: 760px;
     visibility: hidden;
 }
 
@@ -400,4 +400,19 @@ body.restroom #cam4{
     100%{
         background-color: #444;
     }
+}
+#stopButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 47%;
+    margin-right: 1400px;
+}
+
+#stopButton:hover {
+    background-color: #ff4500;
 }
