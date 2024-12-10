@@ -24,7 +24,6 @@ async function energyDrain(){
         await sleep(1000)
         energiaNum--
         energia.innerHTML = `${Math.floor(energiaNum/10)}%`
-        console.log(energiaNum/10)
     }
 
 }
