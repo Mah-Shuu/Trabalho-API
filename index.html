@@ -49,13 +49,13 @@
                     </div>
                 </div>
             </div>
-
+            
             <div id="recording"></div>
-
+            
         </section>  
-
-        <div id="camera" class="camera close">
         
+        <div id="camera" class="camera close">
+            
         </div>
         <div class="container" id="sujeitos">
             <div class="card" id="seguranca">
@@ -76,11 +76,11 @@
             </div>
             
         </div>
-
+        
         <video id="static" autoplay loop width="120%" height="120%" muted>
             <source src="./videos/TV STATIC (4K 60FPS).mp4" type="video/mp4">
         </video>
-
+        
         <!-- Câmeras -->
         <section class="camera-controls">
             <button id="botaoCamera">
@@ -90,10 +90,16 @@
                 </div>
             </button>
         </section>
-        <audio id="audio"autoplay>
+        <audio id="audio" autoplay>
             <source src="soms/phone-guy-fnaf-1-night-1-voice-lines-made-with-Voicemod.mp3" type="audio/mp3">
         </audio>
         <button id="stopButton" onclick="stopAudio()">MUTE CALL</button>
+        <div id="jumpscare" class="hidden">
+            <img src="images/gifs-fnaf/2t3rcim2kf1b1.gif" alt="Jump Scare" id="jumpscareImg">
+            <audio id="jumpscareAudio">
+                <source src="jumpscare-audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </main>
     
     <script src="./scripts/images.js"></script>
