@@ -24,7 +24,7 @@ async function switchImageRaposa(){
 }
 async function switchImageCoelho(){
     const num = Math.floor(Math.random() * 21)
-    coelho.src = "../images-bonnie/"+num+".jpg";
+    coelho.src = "./images-bonnie/"+num+".jpg";
 }
 async function switchImageSeguranca(){
     const response = await fetch("https://randomuser.me/api/");
