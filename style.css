@@ -27,26 +27,7 @@ body {
     color: var(--primary-color);
 }
 
-.closet{
-    background-image: url(./images/fnaf-background/closet.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.pirate-cove{
-    background-image: url(./images/fnaf-background/Pirate_cove_nocamera.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.restroom{
-    background-image: url(./images/fnaf-background/Restroom.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.stage{
-    background-image: url(./images/fnaf-background/stage.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+
 
 main {
     display: flex;
