@@ -7,6 +7,7 @@ const sujeitos = document.getElementById("sujeitos");
 const bola = document.getElementById("recording");
 const map = document.getElementById("map")
 const camText = document.getElementById("mapText");
+const red = document.getElementById("powerCamera");
 
 function animationStatic(){
     video.style.display = "block"
@@ -32,6 +33,7 @@ botao.addEventListener("mouseover",function(){
         setTimeout(() => {map.style.visibility = "visible"},1000) // aqui eu adicioner o map
         setTimeout(() => {bola.style.visibility = "visible"},1000)
         setTimeout(() => {effect.style.display = "block"},1000)
+        setTimeout(() => {red.style.display = "block"},1000)
     }else{
         animationStatic();
         setTimeout(() => {camera.style.visibility = "visible"},1000)
@@ -45,6 +47,7 @@ botao.addEventListener("mouseover",function(){
         setTimeout(() => {main.style.border = "0"},1000)
         setTimeout(() => {body.className = "body"},1000)
         setTimeout(() => {effect.style.display = "none"},1000)
+        setTimeout(() => {red.style.display = "none"},1000)
         setTimeout(() => {camera.className = "camera close"}, 1800)
     }
 });

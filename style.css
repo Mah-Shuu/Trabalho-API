@@ -11,6 +11,10 @@
     --hover-color: rgba(155, 155, 155, 0.70);
     --green-bar: #2ca02c;
     --greenluz-bar: #5dff5d;
+    --yellow-bar: rgb(190, 123, 0);
+    --yellowluz-bar: rgb(255, 255, 0);
+    --red-bar: rgb(131, 0, 0);
+    --redluz-bar: red;
 }
 
 body {
@@ -93,26 +97,48 @@ main {
     display:flex;
     align-items: center;
     margin-top: 10px;
-    gap: 2px;
+    gap: 6px;
 }
 
 .bars{
     display: flex;
+    gap: 3px;
 }
 
 .bar2{
-    background-color: var(--greenluz-bar);
-    width: 13px;
+    width: 14px;
     height: 30px;
 }
 
 .bar {
     display: flex;
-    gap: 40px;
     width: 20px;
-    margin: 3px;
     height: 30px;
-    background-color: var(--green-bar);
+}
+
+.green{
+    background-color: var(--green-bar)
+}
+
+.green2{
+    background-color: var(--greenluz-bar);
+}
+
+.yellow{
+    background-color: var(--yellow-bar);
+}
+
+.yellow2{
+    background-color: var(--yellowluz-bar);
+}
+
+.red{
+    display: none;
+    background-color: var(--red-bar);
+}
+
+.red2{
+    background-color: var(--redluz-bar);
 }
 
 #recording{
@@ -133,7 +159,7 @@ main {
     position: absolute;
     bottom: 30px;
     transform: translateX(-60%);
-    width: 1000px;
+    width: 55%;
     height: 60px;
     border: 4px solid var(--hover-color);
     background-color: transparent;
@@ -153,7 +179,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 900;
+    width: 10%;
     height: 100%;
     transform: scaleX(6);
 }
@@ -168,6 +194,7 @@ main {
     border-right: 3px solid var(--hover-color);
     border-bottom: 3px solid var(--hover-color);
     transform: rotate(45deg); 
+    
 }
 
 /* Ajuste da seta superior */
