@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     user-select: none;
     background-size: 100% 100vh;
-    background-image: url(./images/0995b85d336e40de987853cd1148e936.jpeg);
+    background-image: url(./images/fnaf-background/securityRoom.jpeg);
     color: var(--primary-color);
 }
 
@@ -33,7 +33,7 @@ body {
     background-size: 100% 100%;
 }
 .pirate-cove{
-    background-image: url(./images/fnaf-background/zejbvhvahnt61.webp);
+    background-image: url(./images/fnaf-background/pirate-cove.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -230,10 +230,6 @@ main {
     position: absolute;
 }
 
-#seguranca{
-    visibility: hidden;
-}
-
 #freddy{
     top: 35%;
     left: 38%;
@@ -256,10 +252,6 @@ main {
     top: 40%;
     left: 40%;
     visibility: hidden;
-}
-
-.container input{
-    width: 200px;
 }
 
 .card img{
@@ -307,17 +299,18 @@ main {
 }
 
 #stopButton {
+    position: absolute;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 16px;
     cursor: pointer;
     background-color: #bd8a816e;
     color: rgba(233, 209, 209, 0.829);
     border: 2px solid rgb(187, 161, 161);
     border-radius: 5px;
-    margin-bottom: 47%;
-    margin-right: 1400px;
     font-family:'Minecraftia', sans-serif;
     display: none;
+    top: 40px;
+    left: 160px;
 }
 
 .camText{

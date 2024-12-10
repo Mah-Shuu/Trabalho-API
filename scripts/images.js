@@ -2,8 +2,6 @@ const pato = document.getElementById("pato");
 const urso = document.getElementById("urso");
 const raposa = document.getElementById("raposa");
 const coelho = document.getElementById("coelho");
-const seguranca = document.getElementById("seg");
-const botaoSeg = document.getElementById("botaoSeg");
 const listaUrso = [200,300,400,500,600,700,800,900,1000];
 
 async function switchImagePato(){
@@ -24,20 +22,10 @@ async function switchImageRaposa(){
 }
 async function switchImageCoelho(){
     const num = Math.floor(Math.random() * 21)
-    coelho.src = "./images-bonnie/"+num+".jpg";
-}
-async function switchImageSeguranca(){
-    const response = await fetch("https://randomuser.me/api/");
-    const data = await response.json();
-    seguranca.src = data.results[0].picture.large;
+    coelho.src = "./images/images-bonnie/"+num+".jpg";
 }
 
 switchImageRaposa();
 switchImageCoelho();
 switchImageUrso();
 switchImagePato();
-switchImageSeguranca();
-
-botaoSeg.addEventListener("click", function(){
-    switchImageSeguranca();
-})
