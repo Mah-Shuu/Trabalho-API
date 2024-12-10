@@ -33,7 +33,7 @@ async function switchImageSeguranca(){
 }
 
 switchImageRaposa();
-switchImageCoelho();
+// switchImageCoelho();
 switchImageUrso();
 switchImagePato();
 switchImageSeguranca();
