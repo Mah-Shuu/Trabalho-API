@@ -54,10 +54,32 @@ body {
 
 .jumpscares{
     position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 .jumpscare{
     position: absolute;
+    top: 0px;
+    transform: translateX(-50%);
+
+}
+
+#freddyJump{
+    width: 100%;
+    display: none;
+}
+#chicaJump{
+    height: 100%;
+    display: none;
+}
+#bonnieJump{
+    width: 100%;
+    display: none;
+}
+#foxyJump{
+    width: 100%;
+    display: none;
 }
 
 main {
