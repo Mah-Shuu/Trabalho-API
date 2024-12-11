@@ -52,6 +52,14 @@ body {
     background-size: 100% 100%;
 }
 
+.jumpscares{
+    position: absolute;
+}
+
+.jumpscare{
+    position: absolute;
+}
+
 main {
     display: flex;
     flex-direction: column;
