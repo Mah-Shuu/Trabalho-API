@@ -10,6 +10,7 @@ stage.addEventListener("click",function(){
     switchImageRaposa();
     switchImageCoelho();
     switchImagePato();
+    jumpscare()
     body.className = "body stage";
     mapText.innerHTML = "Show Stage"
     urso.style.visibility = "visible";
@@ -22,6 +23,7 @@ pirateCove.addEventListener("click",function(){;
     switchImageCoelho();
     switchImagePato();
     switchImageUrso();
+    jumpscare()
     body.className = "body pirate-cove";
     mapText.innerHTML = "Pirate Cove"
     raposa.style.visibility = "visible";
@@ -34,6 +36,7 @@ closet.addEventListener("click",function(){
     switchImageRaposa();
     switchImagePato();
     switchImageUrso();
+    jumpscare()
     body.className = "body closet";
     mapText.innerHTML = "Supply Closet"
     coelho.style.visibility = "visible";
@@ -46,6 +49,7 @@ restroom.addEventListener("click",function(){
     switchImageRaposa();
     switchImageCoelho();
     switchImageUrso();
+    jumpscare()
     body.className = "body restroom";
     mapText.innerHTML = "Restrooms"
     pato.style.visibility = "visible";
